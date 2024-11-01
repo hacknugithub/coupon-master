@@ -23,4 +23,4 @@ Coupon master system
 * ...
 
 Databse design:
-![alt text](https://github.com/hacknugithub/coupon-master/tree/main/storage/Coupon master.png?raw=true)
+![Coupon master](https://github.com/user-attachments/assets/fae21f7d-c441-4d9a-a147-1cd2aa391919)
