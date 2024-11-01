@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Coupon master system
 
-Things you may want to cover:
+* Ruby version: ruby-2.7.4 [ x86_64 ]
 
-* Ruby version
+* System dependencies: RVM, Rails 6.1.7.10, git, postgresql
 
-* System dependencies
+* Configuration:
+```bundle install```
 
-* Configuration
-
-* Database creation
+* Database creation:
+```rails db:setup```
 
 * Database initialization
+```rails db:migrate```
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+```rspec```
 
 * Deployment instructions
-
+```WIP```
 * ...
+
+Databse design:
+![alt text](https://github.com/hacknugithub/coupon-master/tree/main/storage/Coupon master.png?raw=true)
