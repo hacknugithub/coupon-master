@@ -9,6 +9,7 @@ class Cart < ApplicationRecord
       total: total,
       discount_total: calculate_total_with_coupon_discount(total, coupon.discount_percentage)
     })
+    coupon.update!(redeemed: true)
   end
 
   def total

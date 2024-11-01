@@ -46,10 +46,11 @@ class CouponsController < ApplicationController
       user = @coupon.user_id.nil? ? User.find(params[:user_id]) : @coupon.user 
       # if not then find the user and assign the coupon
 
+      # binding.pry
       if user.coupons.count < @coupon.coupon_book.max_coupons_per_user
         @coupon.update(user_id: user.id)
       else
-        render json: {message: "Sorry you have reached the limit of coupons to redeem"}, status: :unprocessable_entity
+        return render json: {message: "Sorry you have reached the limit of coupons to redeem"}, status: :unprocessable_entity
       end
 
       current_cart = user.carts.last

@@ -43,7 +43,6 @@ class CartsController < ApplicationController
     if @cart.purchased?
       render json: {message: 'This coupon has already been redeemed'}, status: :unprocessable_entity
     else
-      # binding.pry
       @cart.coupon.update(redeemed: true) if @cart.coupon.present?
       @cart.update!(purchased: true)
       render json: {message: 'Congrats the purchased is completed'}, status: :ok
